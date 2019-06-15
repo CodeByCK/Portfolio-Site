@@ -9,7 +9,7 @@ import ParticlesBackground from './Components/ParticlesBackground'
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <div className="body">
         <ParticlesBackground />
 
 
@@ -30,8 +30,8 @@ class App extends Component {
             </div>
           </div>
         </div>
+      </div>
 
-      </Fragment>
     );
   }
 }

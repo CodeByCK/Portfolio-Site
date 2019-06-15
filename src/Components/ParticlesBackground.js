@@ -54,7 +54,8 @@ class ParticlesBackground extends Component {
                                     "distance": 400,
                                     "duration": 4
                                 }
-                            }
+                            },
+                            "retina_detect": true
                         }
                     }}
                 />

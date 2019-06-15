@@ -6,6 +6,12 @@
 }
 
 
+.body{
+  background-color: rgba(27,27,27,1);
+  
+}
+
+
 .particles{
   position: absolute;
    width: 100%;
@@ -23,7 +29,15 @@
 }
 
 .navLink{
-  color:rgb(212, 212, 212);
+  color:rgb(212, 212, 212) !important;
+}
+
+.navLink:hover{
+  color:rgb(212, 212, 212) !important;
+  color:rgb(0, 255, 213)!important;
+  cursor: pointer !important;
+  transition-duration: .90s !important;
+  text-decoration: none !important;
 }
 
 .navBrand{
@@ -64,10 +78,6 @@
   width: 100%;
 }
 
-.linkedIn{
-  margin-left: 15px;
-  fill:blue;
-}
 
 .githubLogo{
   color:rgb(212, 212, 212);
