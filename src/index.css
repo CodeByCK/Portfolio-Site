@@ -28,6 +28,8 @@
 
 .navBrand{
   color:white;
+  font-size: 30px;
+  font-weight: 600
 }
 
 
@@ -62,3 +64,33 @@
   width: 100%;
 }
 
+.linkedIn{
+  margin-left: 15px;
+  fill:blue;
+}
+
+.githubLogo{
+  color:rgb(212, 212, 212);
+  font-size:40px;
+  margin-right: 20px;
+}
+
+.githubLogo:hover{
+transition-duration: .90s;
+  font-size: 38px;
+color:rgb(0, 174, 255);
+cursor: pointer;
+}
+
+.linkedinLogo{
+  color:rgb(212, 212, 212);
+  font-size: 40px;
+}
+
+
+.linkedinLogo:hover{
+  transition-duration: .90s;
+  font-size: 38px;
+  color:rgb(0, 174, 255);
+  cursor: pointer;
+}
