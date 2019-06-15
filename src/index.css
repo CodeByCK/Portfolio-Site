@@ -1,0 +1,25 @@
+* {
+  background-color: rgb(37, 37, 37);
+}
+
+.navLink{
+  color:rgb(212, 212, 212);
+}
+
+.navBrand{
+  color:white;
+  
+}
+
+
+.hero-container{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero{
+  color:white;
+  width: 100%
+}
