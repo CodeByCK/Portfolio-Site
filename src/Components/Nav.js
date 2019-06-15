@@ -6,7 +6,7 @@ class Nav extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar bsPrefix="navbar">
+                <Navbar className="navbar">
                     <Navbar.Brand>
                         <span className="navBrand"> Christian Khawam </span>
                     </Navbar.Brand>

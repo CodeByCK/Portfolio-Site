@@ -1,19 +1,35 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Nav from './Components/Nav'
-import ParticlesBackground from './Components/ParticlesBackground'
 import Hero from './Components/Hero'
+import About from './Components/About'
+import ParticlesBackground from './Components/ParticlesBackground'
 
 
 class App extends Component {
   render() {
     return (
-      <div className="custom">
+      <Fragment>
+        <ParticlesBackground />
 
-        <Nav />
-        <div className="container">
-          <Hero />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <Nav />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <Hero />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 about-bg">
+              <About />
+            </div>
+          </div>
         </div>
-      </div>
+
+      </Fragment>
     );
   }
 }
