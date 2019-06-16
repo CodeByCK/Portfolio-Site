@@ -145,3 +145,50 @@ hr{
   width: 50%;
   
 }
+
+
+
+.portfolio-img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+figcaption {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+}
+
+figure:hover img {
+  opacity: 0.10;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+figure:hover  figcaption{
+  opacity: 1;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+
+
+.btn-project {
+    color: white !important;
+    border-radius: 20px !important;
+    background-color: none !important;
+    border-color: rgb(0, 255, 213) !important;
+}
+
+.btn-project:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(0, 255, 213, 0.301) !important;
+  border-color:rgb(0, 255, 213) !important;
+  cursor: pointer !important;
+}

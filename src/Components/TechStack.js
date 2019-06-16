@@ -23,6 +23,10 @@ import { ReactComponent as Frontend } from './images/frontend.svg';
 import { ReactComponent as BrowserLogo } from './images/browser.svg';
 import { ReactComponent as AxiosLogo } from './images/axios.svg';
 import { ReactComponent as MongooseLogo } from './images/mongoose.svg';
+import { ReactComponent as Tools } from './images/tools.svg';
+import { ReactComponent as PhotoshopLogo } from './images/photoshop-cc.svg';
+import { ReactComponent as IllustratorLogo } from './images/adobe-illustrator-cc.svg';
+import { ReactComponent as SketchLogo } from './images/sketch.svg';
 
 
 
@@ -43,7 +47,26 @@ class TechStack extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-sm-6">
+                            <div className="col-lg-4">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">
+                                            <Tools height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                            <br></br>
+                                            Design
+                                </h5>
+                                        <hr></hr>
+                                        <p className="card-text text-center">Clean design patterns and content structure for User Experience.</p>
+                                        <ul class="list-group text-center">
+
+                                            <li class="list-group-item"><PhotoshopLogo height={x} width={x} className="mb-2" /><br></br>Photoshop</li>
+                                            <li class="list-group-item"><IllustratorLogo height={x} width={x} className="mb-2" /><br></br>Illustrator</li>
+                                            <li class="list-group-item"><SketchLogo height={x} width={x} className="mb-2" /><br></br>Sketch</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
                                 <div className="card text-center">
                                     <div className="card-body">
                                         <h5 className="card-title text-center">
@@ -71,7 +94,7 @@ class TechStack extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-sm-6">
+                            <div className="col-lg-4">
                                 <div className="card">
                                     <div className="card-body">
                                         <h5 className="card-title text-center">
@@ -80,7 +103,7 @@ class TechStack extends Component {
                                             Back-End
                                         </h5>
                                         <hr></hr>
-                                        <p className="card-text text-center">With supporting text below as a natural lead-in </p>
+                                        <p className="card-text text-center">I keep scalability in mind when developing  </p>
                                         <ul class="list-group text-center">
                                             <div className="row">
                                                 <div className="col-6">

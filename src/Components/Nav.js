@@ -17,10 +17,10 @@ class Nav extends Component {
                             <AnchorLink href="#about" className="navLink">About</AnchorLink>
                         </Navbar.Text>
                         <Navbar.Text className="mr-3">
-                            <span className="navLink">Projects</span>
+                            <AnchorLink href="#project" className="navLink">Project</AnchorLink>
                         </Navbar.Text>
                         <Navbar.Text className="mr-3">
-                            <span className="navLink">Contact</span>
+                            <AnchorLink href="#contact" className="navLink">Contact</AnchorLink>
                         </Navbar.Text>
                         <Navbar.Text className="mr-3">
                             <span className="navLink">Resume</span>
