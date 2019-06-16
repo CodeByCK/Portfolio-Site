@@ -38,8 +38,8 @@ class TechStack extends Component {
                 <section>
                     <div className="container">
                         <div className="row">
-                            <div className="col">
-                                <h1 className="text-center text-white">Tech Stack</h1>
+                            <div className="col mb-4">
+                                <h1 className="text-center text-white"><span className="tech-text">Tech</span><span className="stack-text">Stack</span></h1>
                             </div>
                         </div>
                         <div className="row">
@@ -51,6 +51,7 @@ class TechStack extends Component {
                                             <br></br>
                                             Front-End
                                         </h5>
+                                        <hr></hr>
                                         <p className="card-text text-center">I create my develop and design with responsiveness in mind.</p>
 
                                         <ul class="list-group text-center">
@@ -78,6 +79,7 @@ class TechStack extends Component {
                                             <br></br>
                                             Back-End
                                         </h5>
+                                        <hr></hr>
                                         <p className="card-text text-center">With supporting text below as a natural lead-in </p>
                                         <ul class="list-group text-center">
                                             <div className="row">

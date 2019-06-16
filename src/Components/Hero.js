@@ -38,8 +38,7 @@ class Hero extends Component {
                         </div>
                     </div>
                     <div className="text-center">
-
-                    <i class="fas fa-chevron-down down-Arrow"></i>
+                        <i class="fas fa-chevron-down down-Arrow"></i>
                     </div>
 
                 </div>

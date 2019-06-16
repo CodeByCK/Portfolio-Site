@@ -114,11 +114,11 @@ cursor: pointer;
 
 
 .card{
-  background: none !important;
+  background: rgb(48, 48, 48) !important;
   /* border: none !important; */
   border-radius: 10px !important;
-  border-color: rgb(0, 255, 213)!important;
-  border-width: 2px !important;
+  border-color: rgba(255, 255, 255, 0.178)!important;
+  border-width: 1px !important;
   color: white;
   margin-bottom: 30px;
 }
@@ -127,4 +127,21 @@ cursor: pointer;
   background: none !important;
   border: none !important;
   color: white;
+}
+
+.tech-text{
+  font-weight: 300;
+  color: rgb(201, 201, 201);
+}
+
+.stack-text{
+  font-weight: 500;
+  color: aquamarine;
+}
+
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.219) !important;
+  border-radius: 100px !important;
+  width: 50%;
+  
 }
