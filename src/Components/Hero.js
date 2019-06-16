@@ -10,7 +10,7 @@ class Hero extends Component {
 
                 <div className="hero-container">
                     <div className="hero">
-                        <h2 className="text-center text-white">// Hello, My name is <span className="hero-bold">Christian Khawam</span>.</h2>
+                        <h2 className="text-center text-white">Hello, My name is <span className="hero-bold">Christian Khawam</span>.</h2>
                         <h2 className="text-center text-white">I'm a&nbsp;
                         <ReactTyped
                                 className="hero-bold"
@@ -37,9 +37,13 @@ class Hero extends Component {
                             </a>
                         </div>
                     </div>
+                    <div className="text-center">
+
+                    <i class="fas fa-chevron-down down-Arrow"></i>
+                    </div>
 
                 </div>
-            </Fragment >
+            </Fragment>
         );
     }
 }

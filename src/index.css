@@ -69,6 +69,13 @@
   font-weight: 600
 }
 
+.down-Arrow{
+  color:rgba(255, 255, 255, 0.164);
+  position: absolute;
+  top: 90%;
+  font-size: 50px;
+
+}
 
 
 /* !===={ About }===! */
@@ -103,4 +110,21 @@ cursor: pointer;
   font-size: 38px;
   color:rgb(0, 174, 255);
   cursor: pointer;
+}
+
+
+.card{
+  background: none !important;
+  /* border: none !important; */
+  border-radius: 10px !important;
+  border-color: rgb(0, 255, 213)!important;
+  border-width: 2px !important;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.list-group-item{
+  background: none !important;
+  border: none !important;
+  color: white;
 }

@@ -1,9 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Nav from './Components/Nav'
 import Hero from './Components/Hero'
 import About from './Components/About'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import TechStack from './Components/TechStack'
 import ParticlesBackground from './Components/ParticlesBackground'
+import Projects from './Components/Projects'
+
 
 
 class App extends Component {
@@ -27,6 +29,16 @@ class App extends Component {
           <div className="row">
             <div className="col-12 about-bg">
               <About id="about" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <TechStack />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <Projects />
             </div>
           </div>
         </div>
