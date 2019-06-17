@@ -76,7 +76,7 @@ class TechStack extends Component {
                                             Front-End
                                         </h5>
                                         <hr></hr>
-                                        <p className="card-text text-center">I create my develop and design with responsiveness in mind.</p>
+                                        <p className="card-text text-center">Practice clean code, optimize site performance, and latest technologies.</p>
 
                                         <ul class="list-group text-center">
                                             <div className="row">
@@ -104,7 +104,7 @@ class TechStack extends Component {
                                             Back-End
                                         </h5>
                                         <hr></hr>
-                                        <p className="card-text text-center">I keep scalability in mind when developing  </p>
+                                        <p className="card-text text-center">Application optimization, scalability, and data storage solutions. </p>
                                         <ul class="list-group text-center">
                                             <div className="row">
                                                 <div className="col-6">

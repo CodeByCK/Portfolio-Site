@@ -4,7 +4,7 @@ class About extends Component {
     render() {
         return (
             <Fragment>
-                <section id="about">
+                <section className="mt-3" id="about">
                     <div className="container">
                         <div className="text-center mb-5">
                             <span className="about-text">My name is Christian and I enjoy building and designing web based applications.</span><br></br>
