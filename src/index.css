@@ -92,9 +92,24 @@
   margin-right: 20px;
 }
 
+.contact-links{
+  color:rgb(99, 99, 99);
+  font-size:40px;
+  margin-right: 20px;
+}
+
+.contact-links:hover{
+  transition-duration: .90s;
+  color:rgb(0, 174, 255);
+  cursor: pointer;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  transition: all .8s ease;
+  }
+
 .githubLogo:hover{
 transition-duration: .90s;
-  font-size: 38px;
+  font-size: 41px;
 color:rgb(0, 174, 255);
 cursor: pointer;
 }
@@ -107,7 +122,7 @@ cursor: pointer;
 
 .linkedinLogo:hover{
   transition-duration: .90s;
-  font-size: 38px;
+  font-size: 41px;
   color:rgb(0, 174, 255);
   cursor: pointer;
 }
@@ -164,7 +179,7 @@ figcaption {
 }
 
 figure:hover img {
-  opacity: 0.10;
+  opacity: 0.1;
   -webkit-transition: all .8s ease;
   -moz-transition: all .8s ease;
   transition: all .8s ease;
@@ -191,4 +206,30 @@ figure:hover  figcaption{
   background-color: rgba(0, 255, 213, 0.301) !important;
   border-color:rgb(0, 255, 213) !important;
   cursor: pointer !important;
+}
+
+.btn-launch {
+  color: white !important;
+  border-radius: 20px !important;
+  background-color: none !important;
+  border-color:rgb(212, 0, 0) !important;
+}
+
+.btn-launch:hover {
+color: rgb(255, 255, 255) !important;
+background-color: rgb(212, 0, 0) !important;
+border-color:rgb(212, 0, 0) !important;
+cursor: pointer !important;
+}
+
+
+.contact-section{
+  background: rgb(204, 204, 204);
+  clip-path: polygon(50% 75px, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  padding-top: 75px;
+}
+
+.contact-text{
+  font-weight: 400;
+  color: rgba(27,27,27,1);
 }

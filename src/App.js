@@ -6,6 +6,8 @@ import TechStack from './Components/TechStack'
 import ParticlesBackground from './Components/ParticlesBackground'
 import Projects from './Components/Projects'
 
+import Contact from './Components/Contact'
+
 
 
 class App extends Component {
@@ -18,27 +20,46 @@ class App extends Component {
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
+
               <Nav />
+
             </div>
           </div>
           <div class="row">
             <div class="col-12">
+
               <Hero />
+
             </div>
           </div>
           <div className="row">
             <div className="col-12 about-bg">
-              <About id="about" />
+
+              <About />
+
             </div>
           </div>
           <div className="row">
             <div className="col-12">
+
               <TechStack />
+
             </div>
           </div>
           <div className="row">
             <div className="col-12">
+
               <Projects />
+
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 contact-divider">
+            </div>
+            <div className="col-12 contact-section">
+
+              <Contact />
+
             </div>
           </div>
         </div>

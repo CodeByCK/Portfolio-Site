@@ -23,7 +23,7 @@ class Nav extends Component {
                             <AnchorLink href="#contact" className="navLink">Contact</AnchorLink>
                         </Navbar.Text>
                         <Navbar.Text className="mr-3">
-                            <span className="navLink">Resume</span>
+                            <a href="https://docs.google.com/document/d/1fRnv_0hY7TbSPWrWmskal4G5gLaatIabX_lh8i5a0xk/edit?usp=sharing" className="navLink">Resume</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Navbar>

@@ -43,7 +43,7 @@ class TechStack extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col mb-4">
-                                <h1 className="text-center text-white"><span className="tech-text">Tech</span><span className="stack-text">Stack</span></h1>
+                                <h1 className="text-center text-white"><span className="tech-text">my</span><span className="stack-text">Stack</span></h1>
                             </div>
                         </div>
                         <div className="row">
