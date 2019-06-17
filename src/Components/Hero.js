@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ReactTyped from 'react-typed'
 
 
@@ -7,7 +7,6 @@ class Hero extends Component {
     render() {
         return (
             <Fragment>
-
                 <div className="hero-container">
                     <div className="hero">
                         <h2 className="text-center text-white">Hello, My name is <span className="hero-bold">Christian Khawam</span>.</h2>
@@ -38,9 +37,8 @@ class Hero extends Component {
                         </div>
                     </div>
                     <div className="text-center">
-                        <i class="fas fa-chevron-down down-Arrow"></i>
+                        <AnchorLink href="#about"><i class="fas fa-chevron-down down-Arrow"></i></AnchorLink>
                     </div>
-
                 </div>
             </Fragment>
         );

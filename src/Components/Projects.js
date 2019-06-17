@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Dot } from 'react-animated-dots';
 import IronBudgetLogo from './images/ironbudget.png'
 import IronLiftLogo from './images/ironlift.png'
 import CrossyLogo from './images/crossy.png'
@@ -47,7 +48,7 @@ class Projects extends Component {
                                 </div>
                                 <div className="row mb-5">
                                     <div className="col-12">
-                                        <span className="text-white text-center">Future projects in the making</span>
+                                        <span className="text-white text-center">More projects in the making <Dot>.</Dot> <Dot>.</Dot> <Dot>.</Dot></span>
                                     </div>
                                 </div>
                             </div>

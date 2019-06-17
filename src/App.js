@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Nav from './Components/Nav'
 import Hero from './Components/Hero'
 import About from './Components/About'
@@ -13,57 +13,57 @@ import Contact from './Components/Contact'
 class App extends Component {
   render() {
     return (
-      <div className="body">
+      <Fragment>
         <ParticlesBackground />
+        <div className="body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 topNav">
 
+                <Nav />
 
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-
-              <Nav />
-
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
+            <div class="row">
+              <div class="col-12">
 
-              <Hero />
+                <Hero />
 
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-12 about-bg">
+            <div className="row">
+              <div className="col-12 about-bg">
 
-              <About />
+                <About />
 
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
+            <div className="row">
+              <div className="col-12">
 
-              <TechStack />
+                <TechStack />
 
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
+            <div className="row">
+              <div className="col-12">
 
-              <Projects />
+                <Projects />
 
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-12 contact-divider">
-            </div>
-            <div className="col-12 contact-section">
+            <div className="row">
+              <div className="col-12 contact-divider">
+              </div>
+              <div className="col-12 contact-section">
 
-              <Contact />
+                <Contact />
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Fragment>
 
     );
   }

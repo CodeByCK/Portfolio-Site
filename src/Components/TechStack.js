@@ -30,12 +30,13 @@ import { ReactComponent as SketchLogo } from './images/sketch.svg';
 
 
 
+
 class TechStack extends Component {
 
 
     render() {
 
-        const x = 75 // SVG dimension
+        const x = 50 // SVG dimension
 
         return (
             <Fragment>
