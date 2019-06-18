@@ -28,6 +28,8 @@ import { ReactComponent as PhotoshopLogo } from './images/photoshop-cc.svg';
 import { ReactComponent as IllustratorLogo } from './images/adobe-illustrator-cc.svg';
 import { ReactComponent as SketchLogo } from './images/sketch.svg';
 
+import Slide from 'react-reveal/Slide';
+
 
 
 
@@ -49,78 +51,85 @@ class TechStack extends Component {
                         </div>
                         <div className="row">
                             <div className="col-lg-4">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">
-                                            <Tools height={100} width={100} fill={"#00ffd5"} className="mb-3" />
-                                            <br></br>
-                                            Design
+                                <Slide left>
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">
+                                                <Tools height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                                <br></br>
+                                                Design
                                 </h5>
-                                        <hr></hr>
-                                        <p className="card-text text-center">Clean design patterns and content structure for User Experience.</p>
-                                        <ul class="list-group text-center">
+                                            <hr></hr>
+                                            <p className="card-text text-center">Clean design patterns and content structure for User Experience.</p>
+                                            <ul class="list-group text-center">
 
-                                            <li class="list-group-item"><PhotoshopLogo height={x} width={x} className="mb-2" /><br></br>Photoshop</li>
-                                            <li class="list-group-item"><IllustratorLogo height={x} width={x} className="mb-2" /><br></br>Illustrator</li>
-                                            <li class="list-group-item"><SketchLogo height={x} width={x} className="mb-2" /><br></br>Sketch</li>
-                                        </ul>
+                                                <li class="list-group-item"><PhotoshopLogo height={x} width={x} className="mb-2" /><br></br>Photoshop</li>
+                                                <li class="list-group-item"><IllustratorLogo height={x} width={x} className="mb-2" /><br></br>Illustrator</li>
+                                                <li class="list-group-item"><SketchLogo height={x} width={x} className="mb-2" /><br></br>Sketch</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+                                </Slide>
+                            </div>
+                            <div className="col-lg-4 frontStack">
+                                <Slide bottom>
+
+                                    <div className="card text-center">
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">
+                                                <Frontend height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                                <br></br>
+                                                Front-End
+                                        </h5>
+                                            <hr></hr>
+                                            <p className="card-text text-center">Practice clean code, optimize site performance, and latest technologies.</p>
+
+                                            <ul class="list-group text-center">
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <li class="list-group-item"><ReactLogo height={x} width={x} className="mb-2" /><br></br>React.js</li>
+                                                        <li class="list-group-item"><HTMLlogo height={x} width={x} className="mb-2" /><br></br>HTML5</li>
+                                                        <li class="list-group-item"><CSSLogo height={x} width={x} className="mb-2" /><br></br>CSS3</li>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <li class="list-group-item"><SassLogo height={x} width={x} className="mb-2" /><br></br>Sass</li>
+                                                        <li class="list-group-item"><JqueryLogo height={x} width={x} className="mb-2" /><br></br>jQuery</li>
+                                                        <li class="list-group-item"><BootStrapLogo height={x} width={x} className="mb-2" /><br></br>Bootstrap</li>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </Slide>
                             </div>
                             <div className="col-lg-4">
-                                <div className="card text-center">
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">
-                                            <Frontend height={100} width={100} fill={"#00ffd5"} className="mb-3" />
-                                            <br></br>
-                                            Front-End
+                                <Slide right>
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">
+                                                <BrowserLogo height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                                <br></br>
+                                                Back-End
                                         </h5>
-                                        <hr></hr>
-                                        <p className="card-text text-center">Practice clean code, optimize site performance, and latest technologies.</p>
-
-                                        <ul class="list-group text-center">
-                                            <div className="row">
-                                                <div className="col-6">
-                                                    <li class="list-group-item"><ReactLogo height={x} width={x} className="mb-2" /><br></br>React.js</li>
-                                                    <li class="list-group-item"><HTMLlogo height={x} width={x} className="mb-2" /><br></br>HTML5</li>
-                                                    <li class="list-group-item"><CSSLogo height={x} width={x} className="mb-2" /><br></br>CSS3</li>
+                                            <hr></hr>
+                                            <p className="card-text text-center">Application optimization, scalability, and data storage solutions. </p>
+                                            <ul class="list-group text-center">
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <li class="list-group-item"><NodeJs height={x} width={x} className="mb-2" /><br></br>Node.js</li>
+                                                        <li class="list-group-item"><MongoDB height={x} width={x} className="mb-2" /><br></br>MongoDB</li>
+                                                        <li class="list-group-item"><MongooseLogo height={x} width={x} className="mb-2" /><br></br>Mongoose</li>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <li class="list-group-item"><ExpressJs height={x} width={x} className="mb-2" /><br></br>ExpressJs</li>
+                                                        <li class="list-group-item"><MongoLab height={x} width={x} className="mb-2" /><br></br>MongoLab</li>
+                                                        <li class="list-group-item"><AxiosLogo height={x} width={x} className="mb-2" /><br></br>AJAX</li>
+                                                    </div>
                                                 </div>
-                                                <div className="col-6">
-                                                    <li class="list-group-item"><SassLogo height={x} width={x} className="mb-2" /><br></br>Sass</li>
-                                                    <li class="list-group-item"><JqueryLogo height={x} width={x} className="mb-2" /><br></br>jQuery</li>
-                                                    <li class="list-group-item"><BootStrapLogo height={x} width={x} className="mb-2" /><br></br>Bootstrap</li>
-                                                </div>
-                                            </div>
-                                        </ul>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">
-                                            <BrowserLogo height={100} width={100} fill={"#00ffd5"} className="mb-3" />
-                                            <br></br>
-                                            Back-End
-                                        </h5>
-                                        <hr></hr>
-                                        <p className="card-text text-center">Application optimization, scalability, and data storage solutions. </p>
-                                        <ul class="list-group text-center">
-                                            <div className="row">
-                                                <div className="col-6">
-                                                    <li class="list-group-item"><NodeJs height={x} width={x} className="mb-2" /><br></br>Node.js</li>
-                                                    <li class="list-group-item"><MongoDB height={x} width={x} className="mb-2" /><br></br>MongoDB</li>
-                                                    <li class="list-group-item"><MongooseLogo height={x} width={x} className="mb-2" /><br></br>Mongoose</li>
-                                                </div>
-                                                <div className="col-6">
-                                                    <li class="list-group-item"><ExpressJs height={x} width={x} className="mb-2" /><br></br>ExpressJs</li>
-                                                    <li class="list-group-item"><MongoLab height={x} width={x} className="mb-2" /><br></br>MongoLab</li>
-                                                    <li class="list-group-item"><AxiosLogo height={x} width={x} className="mb-2" /><br></br>AJAX</li>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </Slide>
                             </div>
                         </div>
                     </div>

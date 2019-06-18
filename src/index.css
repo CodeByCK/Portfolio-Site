@@ -91,6 +91,24 @@
   .down-Arrow{
     left: 45%
   }
+
+  figure:active img {
+    opacity: 0.1;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+  
+  figure:active  figcaption{
+    opacity: 1;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+
+
+
 }
 
 .down-Arrow:hover{
@@ -177,6 +195,10 @@ cursor: pointer;
   padding-bottom: 1rem !important;
   padding-left: 0.2rem !important;
   padding-right: 0.2rem !important;
+}
+
+.frontStack{
+  overflow-y: hidden!important;
 }
 
 .list-group-item{

@@ -37,6 +37,7 @@ class Hero extends Component {
                         </div>
                     </div>
                     <div className="text-center">
+
                         <AnchorLink href="#about"><i class="fas fa-chevron-down down-Arrow"></i></AnchorLink>
                     </div>
                 </div>

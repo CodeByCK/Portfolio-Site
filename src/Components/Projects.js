@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Dot } from 'react-animated-dots';
 import myProjects from "./ProjectsData"
+import Fade from 'react-reveal/Fade'
 
 
 
@@ -21,19 +22,21 @@ class Projects extends Component {
                             </div>
                         </div>
                         <div className="row text-center">
-                            {this.state.projects.map((data, i) => {
-                                return (
-                                    <div className="col-4 mb-3">
-                                        <figure>
-                                            <img src={data.img} atl={data.alt} className="portfolio-img" />
-                                            <figcaption>
-                                                <a href={data.github} className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
-                                                <a href={data.live} className="btn btn-launch mb-3">Launch</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                )
-                            })}
+                            <Fade>
+                                {this.state.projects.map((data, i) => {
+                                    return (
+                                        <div className="col-lg mb-3">
+                                            <figure>
+                                                <img src={data.img} atl={data.alt} className="portfolio-img" />
+                                                <figcaption>
+                                                    <a href={data.github} className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
+                                                    <a href={data.live} className="btn btn-launch mb-3">Launch</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    )
+                                })}
+                            </Fade>
                         </div>
                         <div className="row mb-5">
                             <div className="col-12 text-center">

@@ -5,7 +5,6 @@ import About from './Components/About'
 import TechStack from './Components/TechStack'
 import ParticlesBackground from './Components/ParticlesBackground'
 import Projects from './Components/Projects'
-
 import Contact from './Components/Contact'
 
 
@@ -15,6 +14,7 @@ class App extends Component {
     return (
       <Fragment>
         <ParticlesBackground />
+
         <div className="body">
           <div class="container-fluid">
             <div class="row">
@@ -36,6 +36,7 @@ class App extends Component {
 
                 <About />
 
+
               </div>
             </div>
             <div className="row">
@@ -49,6 +50,7 @@ class App extends Component {
               <div className="col-12">
 
                 <Projects />
+
 
               </div>
             </div>
