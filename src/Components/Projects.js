@@ -1,10 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import { Dot } from 'react-animated-dots';
-import IronBudgetLogo from './images/ironbudget.png'
-import IronLiftLogo from './images/ironlift.png'
-import CrossyLogo from './images/crossy.png'
+import myProjects from "./ProjectsData"
+
+
+
 
 class Projects extends Component {
+    state = {
+        projects: myProjects
+    }
+
     render() {
         return (
             <Fragment>
@@ -16,41 +21,23 @@ class Projects extends Component {
                             </div>
                         </div>
                         <div className="row text-center">
-                            <div className="col-12">
-                                <div className="row">
-                                    <div className="col-lg mb-3">
+                            {this.state.projects.map((data, i) => {
+                                return (
+                                    <div className="col-4 mb-3">
                                         <figure>
-                                            <img src={IronBudgetLogo} atl="Iron-Budget-Logo" className="portfolio-img" />
+                                            <img src={data.img} atl={data.alt} className="portfolio-img" />
                                             <figcaption>
-                                                <a href="https://github.com/CodeByCK/Iron-Budget-Server" className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
-                                                <a href="http://iron-budget.herokuapp.com" className="btn btn-launch mb-3">Launch</a>
+                                                <a href={data.github} className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
+                                                <a href={data.live} className="btn btn-launch mb-3">Launch</a>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div className="col-lg mb-3">
-                                        <figure>
-                                            <img src={IronLiftLogo} atl="Iron-Lift-Logo" className="portfolio-img" />
-                                            <figcaption>
-                                                <a href="https://github.com/CodeByCK/Workout-Log" className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
-                                                <a href="http://simpleworkoutlog.herokuapp.com" className="btn btn-launch mb-3">Launch</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="col-lg mb-3">
-                                        <figure>
-                                            <img src={CrossyLogo} atl="Iron-Budget-Logo" className="portfolio-img" />
-                                            <figcaption>
-                                                <a href="https://github.com/CodeByCK/IronHack-Game" className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
-                                                <a href="https://codebyck.github.io/IronHack-Game/" className="btn btn-launch mb-3">Launch</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div className="row mb-5">
-                                    <div className="col-12">
-                                        <span className="text-white text-center">More projects in the making <Dot>.</Dot> <Dot>.</Dot> <Dot>.</Dot></span>
-                                    </div>
-                                </div>
+                                )
+                            })}
+                        </div>
+                        <div className="row mb-5">
+                            <div className="col-12 text-center">
+                                <span className="text-white">More projects in the making <Dot>.</Dot> <Dot>.</Dot> <Dot>.</Dot></span>
                             </div>
                         </div>
                     </div>
