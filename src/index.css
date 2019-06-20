@@ -2,7 +2,7 @@
 
 *{
   font-family: 'Raleway';
-  overflow-x: hidden;
+  overflow-x: none;
 
 }
 
@@ -22,6 +22,28 @@
    background: linear-gradient(180deg, rgba(66,66,66,1) 0%, rgba(27,27,27,1) 80%); 
     /* z-index: -1; */
     
+  }
+
+  #codebyck{
+    max-width: 900px;
+    stroke: rgb(0, 255, 213);
+    /* stroke: rgb(255, 255, 255); */
+    stroke-linejoin: round;
+    /* fill: rgba(255, 255, 255, 0.034); */
+    stroke-width: 2.5px;
+    /* transition: 2s ease-in */
+  }
+
+  .svgWrapper{
+    height: 320px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 375px){
+    #codebyck{
+      /* padding-top: 190px; */
+      stroke-width: 8px;
+    }
   }
 
 /* !===={ Navbar }===! */

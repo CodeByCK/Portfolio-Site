@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ReactTyped from 'react-typed'
+import CKsvg from './CK'
 
 
 class Hero extends Component {
@@ -9,8 +10,13 @@ class Hero extends Component {
             <Fragment>
                 <div className="hero-container">
                     <div className="hero">
+                        <div className="text-center svgWrapper">
+                            <CKsvg />
+                        </div>
+
                         <h2 className="text-center text-white">Hello, My name is <span className="hero-bold">Christian Khawam</span>.</h2>
                         <h2 className="text-center text-white">I'm a&nbsp;
+
                         <ReactTyped
                                 className="hero-bold"
                                 loop
