@@ -19,13 +19,6 @@ const myProjects = [
         github: "https://github.com/CodeByCK/IronHack-Game",
         live: "https://codebyck.github.io/IronHack-Game/",
         alt: "crossy-logo"
-    },
-    {
-        id: 4,
-        img: "./images/crossy.png",
-        github: "https://github.com/CodeByCK/IronHack-Game",
-        live: "https://codebyck.github.io/IronHack-Game/",
-        alt: "crossy-logo"
     }
 ]
 export default myProjects

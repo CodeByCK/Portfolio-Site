@@ -22,12 +22,10 @@ class Projects extends Component {
                             </div>
                         </div>
                         <div className="row text-center">
-
                             {this.state.projects.map((data, i) => {
                                 return (
-
                                     <Fade>
-                                        <div className="col-lg mb-3">
+                                        <div className="col-lg-4 mb-3">
                                             <figure>
                                                 <img src={data.img} atl={data.alt} className="portfolio-img" />
                                                 <figcaption>
@@ -37,10 +35,8 @@ class Projects extends Component {
                                             </figure>
                                         </div>
                                     </Fade>
-
                                 )
                             })}
-
                         </div>
                         <div className="row mb-5">
                             <div className="col-12 text-center">
