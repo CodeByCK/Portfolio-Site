@@ -204,7 +204,7 @@ cursor: pointer;
   /* border: none !important; */
   border-radius: 10px !important;
   border-color: rgba(255, 255, 255, 0.178)!important;
-  border-width: 1px !important;
+  border-width: 2px !important;
   color: white;
   margin-bottom: 30px;
   box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.021);
