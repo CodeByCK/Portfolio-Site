@@ -3,35 +3,27 @@
 *{
   font-family: 'Raleway';
   overflow-x: none;
-
 }
 
 
 .body{
   background-color: rgba(27,27,27,1);
-  
 }
 
 
 .particles{
   position: absolute;
    width: 100%;
-   height: 100%;
-   /* background: rgba(27,27,27,1); */
+   height: 90vh;
    background: rgb(66,66,66);
    background: linear-gradient(180deg, rgba(66,66,66,1) 0%, rgba(27,27,27,1) 80%); 
-    /* z-index: -1; */
-    
   }
 
   #codebyck{
     max-width: 900px;
     stroke: rgb(0, 255, 213);
-    /* stroke: rgb(255, 255, 255); */
     stroke-linejoin: round;
-    /* fill: rgba(255, 255, 255, 0.034); */
     stroke-width: 2.5px;
-    /* transition: 2s ease-in */
   }
 
   .svgWrapper{
@@ -81,6 +73,13 @@
 
 
 /* !===={ Hero }===! */
+
+.hero-container{
+  height: 90vh;
+  width: 100%;
+}
+
+
 .hero{
   position: absolute;
   top: 40%;
@@ -89,11 +88,6 @@
   width: 100%;
 
 } 
-
-.hero-container{
-  height: 90vh;
-  width: 100%;
-}
 
 
 .hero-bold{

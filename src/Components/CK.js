@@ -3,7 +3,6 @@ import anime from "animejs";
 
 
 class CKsvg extends Component {
-
     componentDidMount(){
         this.anime()
     }
@@ -104,14 +103,5 @@ class CKsvg extends Component {
         );
     }
 }
-anime({
-    targets: 'path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutBack',
-    duration: 3500,
-    delay: function (el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
-})
 
 export default CKsvg;
