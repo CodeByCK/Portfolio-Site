@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import Nav from './Components/Nav'
-import Hero from './Components/Hero'
-import About from './Components/About'
-import TechStack from './Components/TechStack'
-import ParticlesBackground from './Components/ParticlesBackground'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import TechStack from './components/TechStack'
+import ParticlesBackground from './components/ParticlesBackground'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 
 

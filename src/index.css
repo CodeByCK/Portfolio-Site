@@ -247,6 +247,7 @@ hr{
   border-radius: 20px;
 }
 
+
 figcaption {
   position: absolute;
   top: 25%;
@@ -270,7 +271,6 @@ figure:hover  figcaption{
   -moz-transition: all .8s ease;
   transition: all .8s ease;
 }
-
 
 
 .btn-project {
