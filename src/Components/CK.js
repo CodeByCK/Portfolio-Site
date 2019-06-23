@@ -1,14 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import anime from "animejs";
 
 
-class CKsvg extends Component {
-    componentDidMount(){
-        this.anime()
-    }
+const CKsvg = () => {
 
-    anime = ()=>{
-        anime({
+	useEffect(()=>{
+		anime({
             targets: 'path',
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInBack',
@@ -17,10 +14,8 @@ class CKsvg extends Component {
             direction: 'alternate',
             loop: true
         })
-    }
-    
-    
-    render() {
+	})
+
         return (
         <Fragment>
         <svg id="codebyck" viewBox="0 0 1224 792" fill="none" stroke="#25F4F4" stroke-width="5">
@@ -102,6 +97,6 @@ class CKsvg extends Component {
 </Fragment>
         );
     }
-}
+
 
 export default CKsvg;
