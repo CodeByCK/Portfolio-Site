@@ -28,6 +28,9 @@ import { ReactComponent as PhotoshopLogo } from '../assets/images/photoshop-cc.s
 import { ReactComponent as IllustratorLogo } from '../assets/images/adobe-illustrator-cc.svg';
 import { ReactComponent as SketchLogo } from '../assets/images/sketch.svg';
 
+
+import DesignSVG from './DesinSVG';
+
 import Slide from 'react-reveal/Slide';
 
 
@@ -55,10 +58,10 @@ class TechStack extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <h5 className="card-title text-center">
-                                                <Tools height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                                <DesignSVG fill={"#00ffd5"} className="mb-3" />
                                                 <br></br>
                                                 Design
-                                </h5>
+                                            </h5>
                                             <hr></hr>
                                             <p className="card-text text-center">Clean design patterns and content structure for User Experience.</p>
                                             <ul class="list-group text-center">

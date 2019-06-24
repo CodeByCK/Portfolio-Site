@@ -312,3 +312,8 @@ cursor: pointer !important;
   font-weight: 400;
   color: rgba(27,27,27,1);
 }
+
+
+.designSvg{
+  margin-bottom: 20px;
+}
