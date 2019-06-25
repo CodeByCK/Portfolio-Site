@@ -30,6 +30,7 @@ import { ReactComponent as SketchLogo } from '../assets/images/sketch.svg';
 
 
 import DesignSVG from './DesinSVG';
+import FrontendSVG from './FrontendSVG'
 
 import Slide from 'react-reveal/Slide';
 
@@ -80,7 +81,7 @@ class TechStack extends Component {
                                     <div className="card text-center">
                                         <div className="card-body">
                                             <h5 className="card-title text-center">
-                                                <Frontend height={100} width={100} fill={"#00ffd5"} className="mb-3" />
+                                                <FrontendSVG fill={"#00ffd5"} className="mb-3" />
                                                 <br></br>
                                                 Front-End
                                         </h5>

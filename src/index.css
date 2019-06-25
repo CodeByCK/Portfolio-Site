@@ -314,6 +314,6 @@ cursor: pointer !important;
 }
 
 
-.designSvg{
+.designSvg,.front-endSvg, .back-endSvg{
   margin-bottom: 20px;
 }
