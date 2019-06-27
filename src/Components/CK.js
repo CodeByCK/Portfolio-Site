@@ -9,10 +9,11 @@ const CKsvg = () => {
             targets: 'path',
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInBack',
-            duration: 2500,
+			duration: 2500,
+			autoplay: true,
             delay: function (el, i) { return i * 250 },
-            direction: 'alternate',
-            loop: true
+            direction: 'normal',
+            loop: false
         })
 	})
 
