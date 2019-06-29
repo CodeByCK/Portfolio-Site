@@ -31,10 +31,12 @@
     overflow: hidden;
   }
 
-  @media (max-width: 375px){
-    #codebyck{
+  @media screen and (max-width: 630px){
+    #codebyck, .svgWrapper{
+      display: none;
+      transition: .2s ease-in
       /* padding-top: 190px; */
-      stroke-width: 8px;
+      /* stroke-width: 8px; */
     }
   }
 
