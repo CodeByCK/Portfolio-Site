@@ -6,7 +6,7 @@ const CKsvg = () => {
 
 	useEffect(()=>{
 		anime({
-            targets: 'path',
+            targets: '.back-endSvg path, #codebyck path, .front-endSvg path, .designSvg path',
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInBack',
 			duration: 2500,
