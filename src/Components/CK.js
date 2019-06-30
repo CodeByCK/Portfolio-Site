@@ -11,7 +11,7 @@ const CKsvg = () => {
             easing: 'easeInBack',
 			duration: 2500,
 			autoplay: true,
-            delay: function (el, i) { return i * 250 },
+            delay: function (el, i) { return i * 150 },
             direction: 'normal',
             loop: false
         })
