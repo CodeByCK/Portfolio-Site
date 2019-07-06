@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600&display=swap');
 
 *{
   font-family: 'Raleway';
@@ -56,6 +56,7 @@
 
 .navLink{
   color:rgb(212, 212, 212) !important;
+  font-weight: 500
 }
 
 .navLink:hover{
@@ -196,14 +197,14 @@ cursor: pointer;
 
 
 .card{
-  background: rgba(73, 73, 73, 0.014) !important;
-  /* border: none !important; */
-  border-radius: 10px !important;
+  background: rgba(95, 95, 95, 0.11) !important;
+  border-radius: 20px !important;
   border-color: rgba(255, 255, 255, 0.178)!important;
-  border-width: 2px !important;
+  /* border-width: 2px !important; */
+  border: none !important;
   color: white;
   margin-bottom: 30px;
-  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.021);
+  /* box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.021); */
 }
 
 .card-body {
@@ -236,7 +237,7 @@ cursor: pointer;
 }
 
 hr{
-  border: 1px solid rgba(255, 255, 255, 0.219) !important;
+  border: 1px solid rgba(207, 207, 207, 0.11) !important;
   border-radius: 100px !important;
   width: 50%;
   
@@ -318,4 +319,27 @@ cursor: pointer !important;
 
 .designSvg,.front-endSvg, .back-endSvg{
   margin-bottom: 20px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(71, 71, 71)
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(0, 151, 126);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background:   rgb(0, 255, 213);
+  /* background:rgb(0, 151, 126); */
 }
