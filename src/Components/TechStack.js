@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import anime from 'animejs'
 //Animated SVGs
 import BackEndSVG from './BackEndSVG'
 import DesignSVG from './DesinSVG';
 import FrontendSVG from './FrontendSVG'
 
+//SVGs 
 import { ReactComponent as ReactLogo } from '../assets/images/react.svg';
 import { ReactComponent as MongoDB } from '../assets/images/mongodb.svg';
 import { ReactComponent as MongoLab } from '../assets/images/mongolab.svg';
@@ -29,27 +29,7 @@ import Slide from 'react-reveal/Slide';
 
 class TechStack extends Component {
 
-
-    // componentDidMount() {
-    //     anime({
-    //         targets: 'path',
-    //         easing: 'easeInQuad',
-    //         duration: 1500,
-    //         direction: 'normal',
-    //         loop: false
-    //     })
-
-    // }
-
     render() {
-        // anime({
-        //     targets: 'path',
-        //     easing: 'easeInQuad',
-        //     duration: 1500,
-        //     direction: 'normal',
-        //     loop: false
-        // })
-
         const x = 50 // SVG dimension
 
         return (
@@ -92,7 +72,7 @@ class TechStack extends Component {
                                                 <FrontendSVG fill={"#00ffd5"} className="mb-3" />
                                                 <br></br>
                                                 Front-End
-                                        </h5>
+                                            </h5>
                                             <hr></hr>
                                             <p className="card-text text-center">Practice clean code, optimize site performance, and latest technologies.</p>
 
@@ -122,7 +102,7 @@ class TechStack extends Component {
                                                 <BackEndSVG fill={"#00ffd5"} className="mb-3" />
                                                 <br></br>
                                                 Back-End
-                                        </h5>
+                                            </h5>
                                             <hr></hr>
                                             <p className="card-text text-center">Application optimization, scalability, and data storage solutions. </p>
                                             <ul class="list-group text-center">
