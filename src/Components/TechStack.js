@@ -1,8 +1,5 @@
 import React, { Component, Fragment } from 'react';
 //Animated SVGs
-import BackEndSVG from './BackEndSVG'
-import DesignSVG from './DesinSVG';
-import FrontendSVG from './FrontendSVG'
 
 //SVGs 
 import { ReactComponent as ReactLogo } from '../assets/images/react.svg';
@@ -21,6 +18,8 @@ import { ReactComponent as PhotoshopLogo } from '../assets/images/photoshop-cc.s
 import { ReactComponent as IllustratorLogo } from '../assets/images/adobe-illustrator-cc.svg';
 import { ReactComponent as SketchLogo } from '../assets/images/sketch.svg';
 
+
+import { Card, CardItem, BackEndSVG, DesignSVG, FrontendSVG } from './common'
 
 import Slide from 'react-reveal/Slide';
 
@@ -44,83 +43,88 @@ class TechStack extends Component {
                         <div className="row">
                             <div className="col-lg-4">
                                 <Slide left>
-                                    <div className="card">
-                                        <div className="card-body">
-                                            <h5 className="card-title text-center">
-                                                <DesignSVG fill={"#00ffd5"} className="mb-3" />
-                                                <br></br>
-                                                Design
-                                            </h5>
-                                            <hr></hr>
-                                            <p className="card-text text-center">Clean design patterns and content structure for User Experience.</p>
-                                            <ul class="list-group text-center">
-
-                                                <li class="list-group-item"><PhotoshopLogo height={x} width={x} className="mb-2" /><br></br>Photoshop</li>
-                                                <li class="list-group-item"><IllustratorLogo height={x} width={x} className="mb-2" /><br></br>Illustrator</li>
-                                                <li class="list-group-item"><SketchLogo height={x} width={x} className="mb-2" /><br></br>Sketch</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <Card
+                                        svgHeader={<DesignSVG fill={"#00ffd5"} className="mb-3" />}
+                                        headerText="Design"
+                                        slogan="Clean design patterns and content structure for User Experience.">
+                                        <CardItem
+                                            svgLogo={<PhotoshopLogo height={x} width={x} className="mb-2" />}
+                                            title="Photoshop" />
+                                        <CardItem
+                                            svgLogo={<IllustratorLogo height={x} width={x} className="mb-2" />}
+                                            title="Illustrator" />
+                                        <CardItem
+                                            svgLogo={<SketchLogo height={x} width={x} className="mb-2" />}
+                                            title="Sketch" />
+                                    </Card>
                                 </Slide>
                             </div>
                             <div className="col-lg-4 frontStack">
                                 <Slide bottom>
-
-                                    <div className="card text-center">
-                                        <div className="card-body">
-                                            <h5 className="card-title text-center">
-                                                <FrontendSVG fill={"#00ffd5"} className="mb-3" />
-                                                <br></br>
-                                                Front-End
-                                            </h5>
-                                            <hr></hr>
-                                            <p className="card-text text-center">Practice clean code, optimize site performance, and latest technologies.</p>
-
-                                            <ul class="list-group text-center">
-                                                <div className="row">
-                                                    <div className="col-6">
-                                                        <li class="list-group-item"><ReactLogo height={x} width={x} className="mb-2" /><br></br>React.js</li>
-                                                        <li class="list-group-item"><HTMLlogo height={x} width={x} className="mb-2" /><br></br>HTML5</li>
-                                                        <li class="list-group-item"><CSSLogo height={x} width={x} className="mb-2" /><br></br>CSS3</li>
-                                                    </div>
-                                                    <div className="col-6">
-                                                        <li class="list-group-item"><SassLogo height={x} width={x} className="mb-2" /><br></br>Sass</li>
-                                                        <li class="list-group-item"><JqueryLogo height={x} width={x} className="mb-2" /><br></br>jQuery</li>
-                                                        <li class="list-group-item"><BootStrapLogo height={x} width={x} className="mb-2" /><br></br>Bootstrap</li>
-                                                    </div>
-                                                </div>
-                                            </ul>
+                                    <Card
+                                        svgHeader={<FrontendSVG fill={"#00ffd5"} className="mb-3" />}
+                                        headerText="Front-End"
+                                        slogan="Practice clean code, optimize site performance, and latest technologies.">
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <CardItem
+                                                    svgLogo={<ReactLogo height={x} width={x} className="mb-2" />}
+                                                    title="React.js" />
+                                                <CardItem
+                                                    svgLogo={<HTMLlogo height={x} width={x} className="mb-2" />}
+                                                    title="HTML5" />
+                                                <CardItem
+                                                    svgLogo={<CSSLogo height={x} width={x} className="mb-2" />}
+                                                    title="CSS3" />
+                                            </div>
+                                            <div className="col-6">
+                                                <CardItem
+                                                    svgLogo={<SassLogo height={x} width={x} className="mb-2" />}
+                                                    title="Sass" />
+                                                <CardItem
+                                                    svgLogo={<JqueryLogo height={x} width={x} className="mb-2" />}
+                                                    title="jQuery" />
+                                                <CardItem
+                                                    svgLogo={<BootStrapLogo height={x} width={x} className="mb-2" />}
+                                                    title="Bootstrap" />
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Card>
+
+
                                 </Slide>
                             </div>
                             <div className="col-lg-4">
                                 <Slide right>
-                                    <div className="card">
-                                        <div className="card-body">
-                                            <h5 className="card-title text-center">
-                                                <BackEndSVG fill={"#00ffd5"} className="mb-3" />
-                                                <br></br>
-                                                Back-End
-                                            </h5>
-                                            <hr></hr>
-                                            <p className="card-text text-center">Application optimization, scalability, and data storage solutions. </p>
-                                            <ul class="list-group text-center">
-                                                <div className="row">
-                                                    <div className="col-6">
-                                                        <li class="list-group-item"><NodeJs height={x} width={x} className="mb-2" /><br></br>Node.js</li>
-                                                        <li class="list-group-item"><MongoDB height={x} width={x} className="mb-2" /><br></br>MongoDB</li>
-                                                        <li class="list-group-item"><MongooseLogo height={x} width={x} className="mb-2" /><br></br>Mongoose</li>
-                                                    </div>
-                                                    <div className="col-6">
-                                                        <li class="list-group-item"><ExpressJs height={x} width={x} className="mb-2" /><br></br>ExpressJs</li>
-                                                        <li class="list-group-item"><MongoLab height={x} width={x} className="mb-2" /><br></br>MongoLab</li>
-                                                        <li class="list-group-item"><AxiosLogo height={x} width={x} className="mb-2" /><br></br>AJAX</li>
-                                                    </div>
-                                                </div>
-                                            </ul>
+                                    <Card
+                                        svgHeader={<BackEndSVG fill={"#00ffd5"} className="mb-3" />}
+                                        headerText="Back-End"
+                                        slogan="Application optimization, scalability, and data storage solutions.">
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <CardItem
+                                                    svgLogo={<NodeJs height={x} width={x} className="mb-2" />}
+                                                    title="Node.js" />
+                                                <CardItem
+                                                    svgLogo={<MongoDB height={x} width={x} className="mb-2" />}
+                                                    title="MongoDB" />
+                                                <CardItem
+                                                    svgLogo={<MongooseLogo height={x} width={x} className="mb-2" />}
+                                                    title="Mongoose" />
+                                            </div>
+                                            <div className="col-6">
+                                                <CardItem
+                                                    svgLogo={<ExpressJs height={x} width={x} className="mb-2" />}
+                                                    title="Express.js" />
+                                                <CardItem
+                                                    svgLogo={<MongoLab height={x} width={x} className="mb-2" />}
+                                                    title="MongoLab" />
+                                                <CardItem
+                                                    svgLogo={<AxiosLogo height={x} width={x} className="mb-2" />}
+                                                    title="AJAX" />
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Card>
                                 </Slide>
                             </div>
                         </div>
