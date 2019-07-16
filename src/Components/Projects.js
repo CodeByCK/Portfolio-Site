@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
+import { ProjectCard } from './common'
 import { Dot } from 'react-animated-dots';
 import myProjects from "./ProjectsData"
-import Fade from 'react-reveal/Fade'
 
 
 const Projects = () => {
@@ -15,21 +15,10 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="row text-center">
-                        {myProjects.map((data, i) => {
-                            return (
-                                <Fade>
-                                    <div className="col-lg-4 mb-3">
-                                        <figure>
-                                            <img src={data.img} atl={data.alt} className="portfolio-img" />
-                                            <figcaption>
-                                                <a href={data.github} className="btn btn-project mb-3">View Code <i class="fab fa-github"></i></a><br></br>
-                                                <a href={data.live} className="btn btn-launch mb-3">Launch</a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </Fade>
-                            )
-                        })}
+                        <ProjectCard
+                            projects={myProjects}
+                            link1="View Code"
+                            link2="Launch" />
                     </div>
                     <div className="row mb-5">
                         <div className="col-12 text-center">
