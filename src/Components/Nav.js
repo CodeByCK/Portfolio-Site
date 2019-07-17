@@ -8,7 +8,7 @@ const Nav = () => {
         <Fragment>
             <Navbar className="navbar">
                 <Navbar.Brand>
-                    <span className="navBrand"> ck </span>
+                    <span className="navBrand"> CK </span>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
