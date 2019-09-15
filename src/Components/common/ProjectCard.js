@@ -10,7 +10,7 @@ const ProjectCard = ({ projects, link1, link2 }) => {
                     <Fade>
                         <div className="col-lg-4 mb-3">
                             <figure>
-                                <img src={data.img} atl={data.alt} className="portfolio-img" />
+                                <img src={data.img} alt={data.alt} className="portfolio-img" />
                                 <figcaption>
                                     <a href={data.github} className="btn btn-project mb-3">{link1} <i class="fab fa-github"></i></a><br></br>
                                     <a href={data.live} className="btn btn-launch mb-3">{link2}</a>
