@@ -6,7 +6,7 @@ const Contact = () => {
         <Fragment>
             <section className="contact-section" id="contact">
                 <div className="container">
-                    <h1 className="text-center"><span className="contact-text">my</span><span className="stack-text">Social</span></h1>
+                    <h1 className="text-center"><span className="contact-text">my</span><span className="contact-text">Social</span></h1>
                 </div>
                 <div className="row">
                     <div className="col-12 mt-5">
