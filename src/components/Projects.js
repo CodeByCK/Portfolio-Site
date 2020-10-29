@@ -3,7 +3,7 @@ import { ProjectCard } from "./common"
 import { Dot } from "react-animated-dots"
 import { schoolProjects, professionalWork } from "./ProjectsData"
 
-const Projects = () => {
+function Projects() {
   return (
     <Fragment>
       <section id="project">

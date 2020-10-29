@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react"
+import React, { Fragment } from "react"
 //Animated SVGs
 
 //SVGs
@@ -25,7 +25,7 @@ import { Card, CardItem, BackEndSVG, DesignSVG, FrontendSVG } from "./common"
 
 import Slide from "react-reveal/Slide"
 
-class TechStack extends Component {
+class TechStack extends React.Component {
   render() {
     const x = 47 // SVG dimension
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import Fade from "react-reveal/Fade"
 
-const ProjectCard = ({ projects, link1, link2 }) => {
+function ProjectCard({ projects, link1, link2 }) {
   return (
     <Fragment>
       {projects.map((data, i) => {

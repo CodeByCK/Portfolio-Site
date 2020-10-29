@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import Navbar from "react-bootstrap/Navbar"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-const Nav = () => {
+function Nav() {
   return (
     <Fragment>
       <div className="container">

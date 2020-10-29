@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from "react"
+import React, { Fragment } from "react"
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import TechStack from "./components/TechStack"
-import ParticlesBackground from "./components/ParticlesBackground"
+// import ParticlesBackground from "./components/ParticlesBackground"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Fragment>
-        <ParticlesBackground />
+        {/* <ParticlesBackground /> */}
 
         <div className="body">
           <div class="container-fluid">

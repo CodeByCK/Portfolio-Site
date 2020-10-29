@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 
-const About = () => {
+function About() {
   return (
     <Fragment>
       <section className="mt-3" id="about">
